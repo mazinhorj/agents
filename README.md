@@ -1,5 +1,5 @@
 # Agents
-## LW Agents
+## NLW Agents
 
 Aplicação perfeita para lives e streamings, onde você não só gerencia perguntas da audiência, mas também tem um Agente de IA que prevê respostas e ajuda em tempo real.
 
