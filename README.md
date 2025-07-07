@@ -5,4 +5,4 @@ Aplicação perfeita para lives e streamings, onde você não só gerencia pergu
 
 By Rocketseat - 7 a 10 de julho de 2025
 
-Loading... 2
+Executing
