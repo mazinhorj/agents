@@ -7,6 +7,17 @@ GET {{baseUrl}}/health
 
 ###
 
-# Get Rooms
+# Trazer Rooms
 GET {{baseUrl}}/rooms
 
+###
+
+# Criar nova sala
+POST {{baseUrl}}/rooms
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Sala de Teste",
+    "description": "Esta é uma sala de teste para verificar a criação de salas."
+}

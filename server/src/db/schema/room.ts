@@ -10,7 +10,7 @@ import {
 export const rooms = pgTable("rooms", {
     id: uuid().primaryKey().defaultRandom(),
     name: text("name").notNull(),
-    description: text("description").notNull(),
+    description: text("description"),
     createdAt: timestamp("created_at").defaultNow().notNull(),
     updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });

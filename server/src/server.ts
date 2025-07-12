@@ -8,6 +8,7 @@ import {
 // import { get } from "http";
 import { env } from "./env.ts";
 import { getRoomsRoute } from "./http/routes/get-rooms.ts";
+import { createRoomRoute } from "./http/routes/create-room.ts";
 
 // import { sql } from './db/connection.ts';
 
@@ -25,6 +26,7 @@ app.get("/health", async () => {
 });
 
 app.register(getRoomsRoute);
+app.register(createRoomRoute)
 
 app
     .listen({
