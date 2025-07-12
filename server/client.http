@@ -3,21 +3,46 @@
 
 
 # Health Check
+# @name healthCheck
 GET {{baseUrl}}/health
 
 ###
 
 # Trazer Rooms
+# @name getRooms
 GET {{baseUrl}}/rooms
 
 ###
 
 # Criar nova sala
+# @name createRoom
 POST {{baseUrl}}/rooms
-Accept: application/json
+# Accept: application/json
 Content-Type: application/json
 
 {
     "name": "Sala de Teste",
     "description": "Esta é uma sala de teste para verificar a criação de salas."
+}
+
+###
+
+@roomId = {{createRoom.response.body.$.roomId}}
+
+###
+
+# Trazer perguntas da sala
+# @name getRoomQuestions
+GET {{baseUrl}}/rooms/{{roomId}}/questions
+
+###
+
+# Criar nova pergunta
+# @name createQuestion
+POST {{baseUrl}}/rooms/{{roomId}}/questions
+# Accept: application/json
+Content-Type: application/json
+
+{
+    "question": "Esta é a pergunta?"
 }
