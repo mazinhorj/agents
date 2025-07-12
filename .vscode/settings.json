@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true
+}
