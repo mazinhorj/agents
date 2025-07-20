@@ -51,6 +51,8 @@ export const uploadAudioRoute: FastifyPluginCallbackZod = (app) => {
 
             return reply.status(201).send({
                 chunkId: chunk.id,
+                transcription: chunk.transcription,
+                embeddings: chunk.embeddings,
             },
             );
         })

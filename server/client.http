@@ -46,3 +46,19 @@ Content-Type: application/json
 {
     "question": "Esta é a pergunta?"
 }
+
+###
+
+# Criar nova pergunta
+# @name createQuestionUnique
+POST {{baseUrl}}/rooms/54992fa0-2325-43f0-9eae-dd38e170467f/questions
+# Accept: application/json
+Content-Type: application/json
+
+{
+    "question": "O que é número?"
+}
+
+
+###
+
