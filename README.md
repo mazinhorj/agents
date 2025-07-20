@@ -40,6 +40,7 @@ Projeto para gerenciamento de perguntas e respostas em tempo real, com integraç
 
 3. **Configure as variáveis de ambiente**
     > Copie .env.exemple para .env e ajuste se necessário.
+    > Gere sua API da Gemini em https://aistudio.google.com/u/6/apikey
 ###
 
 4. **Instale as dependências**
